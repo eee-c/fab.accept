@@ -1,0 +1,7 @@
+{ "name": "fab.accept"
+, "version": "0.0.1"
+, "author": "Chris Strom"
+, "description": "Simple (fab) app to respond to Accept HTTP headers"
+, "homepage": "http://github.com/eee-c/fab.accept"
+, "engines": ["node >= 0.2.0"]
+, "main": "lib/main" }
