@@ -1,0 +1,19 @@
+Ternary for streaming based on Accept HTTP header.
+
+  ( route, /^\/status/ )
+    ( accept, "text/html" )
+      ( PRE )
+        ( player_status )
+      ()
+    ()
+    (accept, "text/plain")
+      (undefined, {headers: { "Content-Type": "text/plain"}})
+      ( player_status )
+    ()
+  ()
+
+
+Notes / TODOs:
+
+ * Does not account for q-factor (not sure that's possible in fab).
+ * Need to implement RegExp matching to make more useful.
